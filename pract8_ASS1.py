@@ -1,0 +1,8 @@
+source_file = open("file.txt", "r")
+content = source_file.read()
+upper_content = content.upper()
+dest_file = open("file.txt", "w")
+dest_file.write(upper_content)
+source_file.close()
+dest_file.close()
+print("Content copied in uppercase successfully!")
